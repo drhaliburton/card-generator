@@ -8,6 +8,9 @@ var formFrom = document.getElementById('from');
 var formMsg = document.getElementById('msg');
 var formImage = document.getElementById('image');
 
+var saveButton = document.getElementById('save-button');
+
+
 
 formTitle.addEventListener('keypress', function(event) {
   cardTitle.innerText = event.target.value;
@@ -24,3 +27,23 @@ formMsg.addEventListener('keypress', function(event) {
 formImage.addEventListener('change', function(event) {
   cardContainer.style.backgroundImage = "url('" + event.target.value + "')";
 })
+
+function downloadURI(uri, name) {
+  var link = document.createElement("a");
+  link.download = name;
+  link.href = uri;
+  link.click();
+  //after creating link you should delete dynamic link
+  //clearDynamicLink(link);
+}
+
+
+saveButton.addEventListener('click', function() {
+
+  html2canvas(cardContainer, {
+    onrendered: function(canvas) {
+      var myImage = canvas.toDataURL("image/png");
+      downloadURI("data:" + myImage, "yourImage.png");
+    }
+  });
+});
