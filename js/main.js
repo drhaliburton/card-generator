@@ -33,10 +33,7 @@ function downloadURI(uri, name) {
   link.download = name;
   link.href = uri;
   link.click();
-  //after creating link you should delete dynamic link
-  //clearDynamicLink(link);
 }
-
 
 saveButton.addEventListener('click', function() {
 
