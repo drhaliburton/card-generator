@@ -1,0 +1,13 @@
+
+
+body {
+    margin: auto;
+    padding: 4rem;
+}
+
+#card-container {
+    margin: auto;
+    width: 70%;
+    height: 400px;
+    border: 1px solid grey;
+}
