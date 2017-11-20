@@ -1,4 +1,5 @@
 var cardContainer = document.getElementById('card-container');
+var cardImage = document.getElementById('card-image');
 var cardTitle = document.getElementById('card-title');
 var cardMsg = document.getElementById('card-msg');
 var cardFrom = document.getElementById('card-from');
@@ -12,20 +13,20 @@ var saveButton = document.getElementById('save-button');
 
 
 
-formTitle.addEventListener('keypress', function(event) {
+formTitle.addEventListener('change', function(event) {
   cardTitle.innerText = event.target.value;
 })
 
-formFrom.addEventListener('keypress', function(event) {
+formFrom.addEventListener('change', function(event) {
   cardFrom.innerText = event.target.value;
 })
 
-formMsg.addEventListener('keypress', function(event) {
+formMsg.addEventListener('change', function(event) {
   cardMsg.innerText = event.target.value;
 })
 
 formImage.addEventListener('change', function(event) {
-  cardContainer.style.backgroundImage = "url('" + event.target.value + "')";
+  cardImage.src = event.target.value;
 })
 
 function downloadURI(uri, name) {
@@ -40,7 +41,7 @@ saveButton.addEventListener('click', function() {
   html2canvas(cardContainer, {
     onrendered: function(canvas) {
       var myImage = canvas.toDataURL("image/png");
-      downloadURI("data:" + myImage, "yourImage.png");
+      downloadURI("data:" + myImage, "HappyHolidays.png");
     }
   });
 });
