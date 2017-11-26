@@ -7,43 +7,48 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto+Slab" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/main.css">
+
 
     </head>
     <body>
-        <h1>Build Your Own Holiday Cards</h1>
-        <form>
-            <div>
-                <label for="title">Card Title:</label>
-                <input type="text" id="title" name="title">
-            </div>
-            <div>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="message"></textarea>
-            </div>
-            <div>
-                <label for="from">From:</label>
-                <input type="text" id="from" name="from">
-            </div>
-            <div>
-                <label for="image">Background Image:</label>
-                <input type="text" id="image" name="image">
-            </div>
-        </form>
+      <h1>Build Your Own Holiday Cards</h1>
 
-        <button id="save-button">Save Card</button>
+      <div class="row form-container">
+        <div class="one-half column">
 
-        <div id="card-container">
+            <form>
+              <label for="title">Card Title:</label>
+              <input type="text" id="title" name="title">
+              <label for="from">From:</label>
+              <input type="text" id="from" name="from">
+              <label for="image">Background Image:</label>
+              <input type="text" id="image" name="image">
+            </form>
+        </div>
 
-            <div class="image">
-                <img src="./img/our-family.jpg" alt="" id="card-image"/>
-                <div class="text-container">
-                    <h1 id="card-title">Happy Holidays!</h1>
-                    <p id="card-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et efficitur nulla, non convallis purus. Proin faucibus tellus nulla, a convallis nisi tincidunt quis. Nulla lacus felis, iaculis vel magna eu, faucibus porta est.</p>
-                    <h2 id="card-from">Love Aunt Debbie</h2>
-                </div>
+        <div class="one-half column">
+          <form>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="message"></textarea>
+          </form>
+          <button id="save-button">Save Card</button>
+
+        </div>
+      </div>
+
+        <div id="card-container" class="row">
+            <div class="one-third column text-container">
+                <h1 id="card-title">Happy Holidays!</h1>
+                <p id="card-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et efficitur nulla, non convallis purus. Proin faucibus tellus nulla, a convallis nisi tincidunt quis. Nulla lacus felis, iaculis vel magna eu, faucibus porta est.</p>
+                <h2 id="card-from">Love Aunt Debbie</h2>
             </div>
+            <div class="two-thirds column img"></div>
+          </div>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
