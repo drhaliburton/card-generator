@@ -16,7 +16,6 @@ p {
 }
 
 .img {
-  background-image: url('./../img/our-family.jpg');
   background-size: 100% 100%;
   background-size: cover;
   height: 400px;
@@ -24,6 +23,9 @@ p {
   float: right;
 }
 
+#card-container {
+  background-color: white;
+}
 
 .text-container {
   padding: 4rem 1rem 2rem 1rem;
