@@ -26,9 +26,9 @@ p {
 
 
 .text-container {
-  padding: 4rem 0 2rem 1rem;
+  padding: 4rem 1rem 2rem 1rem;
   max-height: 400px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #card-from {

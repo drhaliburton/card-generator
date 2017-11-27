@@ -3,15 +3,15 @@
 body {
     margin: auto;
     padding: 4rem;
-    width: 850px;
+    width: 85%;
     font-family: 'Roboto Slab', serif;
     font-size: 14px;
 }
 
 #card-container {
     margin: auto;
-    max-width: 850px;
-    min-height: 400px;
+    width: 85%;
+    height: 40%;
     border: 1px solid grey;
 }
 
@@ -20,7 +20,7 @@ h1 {
 }
 
 .form-container {
-    margin: 2rem;
+    margin: 2rem 7%;
 }
 
 input, textarea {
