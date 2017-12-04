@@ -1,22 +1,16 @@
-
-
 body {
     margin: auto;
     padding: 4rem;
-    width: 85%;
+    width: 75%;
     font-family: 'Roboto Slab', serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #card-container {
     margin: auto;
     width: 85%;
-    height: 40%;
+    max-height: 40%;
     border: 1px solid grey;
-}
-
-h1 {
-    text-align: center;
 }
 
 .form-container {
@@ -37,4 +31,8 @@ button:hover {
     background-color: darkred;
     color: white;
     border: white;
+}
+
+h1 {
+    text-align: center;
 }
