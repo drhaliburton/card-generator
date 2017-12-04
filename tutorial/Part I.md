@@ -1,9 +1,9 @@
 
-#Coding Practice: Building A Holiday Card Generator
+# Coding Practice: Building A Holiday Card Generator
 
-Hello, welcome! It was around this time last year when I started prepping for the Web Development Bootcamp at Lighthouse, and I really enjoyed tinkering with small projects over learning syntaxes and walking through tutorials. It was nice to have some down time over the Holidays to focus on playing with the basics which helped build my excitement for starting the program. I put together this little tutorial that will hopefully give you the opportunity to tinker, with lots of resources to explore web development and design a little futhur. 
+Hello, welcome! It was around this time last year when I started prepping for the Web Development Bootcamp at Lighthouse, and I really enjoyed tinkering with small projects over learning syntaxes and walking through tutorials. It was nice to have some down time over the Holidays to focus on playing with the basics which helped build my excitement for starting the program. I put together this little tutorial that will hopefully give you the opportunity to tinker, with lots of resources to explore web development and design a little furthur. 
 
-If you're considering taking a coding Bootcamp, having a good grasp of structure, styling, event handlers and DOM manipulation can be endlessly useful, and isn't always covered in a prep course. It's worth practicing and fiddling with your CSS to get a solid grasp of the sometimes frustrating complexities of building even a simple webpage.
+If you're considering taking a coding Bootcamp, having a good grasp of structure, styling, event handlers and DOM manipulation can be endlessly useful, and isn't always covered in a prep course. It's worth practicing and fiddling with your CSS to get a feel for the sometimes frustrating complexities of building even a simple webpage.
 
 **What are we making?** Seeing 'tis the season, let's put together a simple Holiday card generator! This will give you the chance to explore page structure with HTML, styling and animations with CSS and functionality with JavaScript. 
 
@@ -14,7 +14,7 @@ If you're considering taking a coding Bootcamp, having a good grasp of structure
 	- jQuery & the Document Object Model (DOM)
 	- html2canvas to save your code as a .jpg image
 
-You can see what I've made for [my card generator here](https://drhaliburton.github.io/card-generator/), but the most important part of this tutorial isn't to copy what I've created! This is your project, and you should explore the limits of CSS to make something incredibly unique that represents your aesthetic. Everything on the page can be customized with your own code, this is just a guideline.
+You can see what I've made for [my card generator here](https://drhaliburton.github.io/card-generator/), but the most important part of this tutorial isn't to copy what I've created - this is your project, and you should explore the limits of CSS to make something incredibly unique that represents your aesthetic. Everything on the page can be customized with your own code, this is just a guideline.
 
 On top of the coding bits, we'll use *Github* for managing and hosting projects and how to leverage the mountains of code seasoned Developers have already built with *CSS & JavaScript frameworks*. While there's nothing overly complicated about what we're taking on, having an understanding of simple HTML & CSS will be very useful. If you haven't explored the basics yet, it doesn't take long to get caught up! Take a few hours to try out some courses like the [HTML & CSS Essentials](https://lighthouse-labs.thinkific.com/courses/html-and-css) courses or some Codecademy modules and you'll be in good shape.
 
@@ -24,7 +24,7 @@ Alright, so let's get started with some simple project setup. You're going to ne
 
 Most developers out there use a service like [Github](https://github.com/) to store their project files and versions. It makes it easy to contribute to projects from all around the world and is a safe haven for your code should your computer bite the dust. If you want to get more familiar with Github, check out their traditional ['Hello World' tutorial](https://guides.github.com/activities/hello-world/).
 
-**Register for a Github account**. We'll be using [Github Pages](https://pages.github.com/) to host our card generator later on in the project and it's useful to get familiar with Github's interface. To get started on our Holiday Card Generator, you'll need to download the boilerplate I've shared through my Github page.
+**Register for a Github account**. We'll be using [Github Pages](https://pages.github.com/) to host our card generator later on in the project and it's useful to get familiar with Github's interface. To get started on our Holiday Card Generator, you'll need to download the boilerplate I've shared through my [Github repository](https://github.com/drhaliburton/card-generator-boilerplate).
 
 1. Grab the starter files [found here](https://github.com/drhaliburton/card-generator-boilerplate). Click the big green 'Clone or download' button and hit Download Zip, or clone using Git if you decide to take on the <a href='#stretch-goal'>stretch goal below</a>. 
 
@@ -39,20 +39,20 @@ I like to think that a webpage is like an apartment - HTML is your walls & furni
 
 When you open up your `index.html` file, you'll see some basic tags.
 
-- `<title\>` & `<meta\>` tags which will help search engines like Google show your page to the right people. 
+- `<title>` & `<meta>` tags which will help search engines like Google show your page to the right people. 
 
-- `<link\>` tags to import your CSS files
+- `<link>` tags to import your CSS files
 
 
-- `<body\>` tag to hold your page structure
+- `<body>` tag to hold your page structure
 
 
 - `<script>` tags to import your JavaScript files
 
 
-Notice in our `<link\>` tags, we've included a stylesheet called `skeleton.css`. Skeleton is a CSS framework of premade styles to simplfy building our page. There are many different CSS frameworks available, like the popular [Bootstrap](https://getbootstrap.com/) or [Bulma](https://bulma.io/). To get an idea of some of the basic pre-build styles Skeleton gives us, you can visit their *[documentation](http://getskeleton.com/)*.
+Notice in our `<link>` tags, we've included a stylesheet called `skeleton.css`. Skeleton is a CSS framework of premade styles to simplfy building our page. There are many different CSS frameworks available, like the popular [Bootstrap](https://getbootstrap.com/) or [Bulma](https://bulma.io/). To get an idea of some of the basic pre-build styles Skeleton gives us, you can visit their *[documentation](http://getskeleton.com/)*.
 
-One example of the default styling are with forms. In your `<body\>`, add a basic form that will accept the data for the message on your card, like the greeting title, image, your message content and your signature.
+One example of the default styling are with forms. In your `<body>`, add a basic form that will accept the data for the message on your card, like the greeting title, image, your message content and your signature.
 
 ````
 <form>

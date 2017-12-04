@@ -25,7 +25,7 @@ First up, take a look at the text container and you'll notice that lovely cursiv
 
 This little nugget is adding two fonts called 'Dancing Script' and 'Roboto Slab' to our project directly from [Google Fonts](https://fonts.google.com/). Google Fonts is a great free resource for adding more font variety to your projects than what your browser will include by default. If you want to add a custom fonts, browse their library and find a font that you enjoy and hit the red '+' button to genereate a link tag to include in your `index.html` file.
 
-Once you've imported your desired fonts, you can use them by name in your CSS `font-family` declarations  - below I've set all of the `h1 & h2` tags to use our cursive 'Dancing Script' font imported from Google, and adjusted some of the default sizes to better suit card container.
+Once you've imported your desired fonts, you can use them by name in your CSS `font-family` declarations  - below I've set all of the `h1 & h2` tags to use our cursive 'Dancing Script' font imported from Google, and adjusted some of the default sizes to better suit the card container.
 
 ````
 h1, h2 {
@@ -44,9 +44,9 @@ p {
 }
 ````
 
-I'ved also added `padding` to our paragraph (`\<p>`). Padding or margins can be added to any of your elements to add help align and add buffer spacing between your elements. You can up on the [box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model) or try out a [Codecademy course](https://www.codecademy.com/courses/learn-css-box-model/lessons/box-model-intro/exercises/box-model-intro?action=lesson_resume&course_redirect=learn-css) to get a better understanding on how and when to use each box model property.
+I'ved also added `padding` to our paragraph (`<p>`). Padding or margins can be added to any of your elements to add help align and add buffer spacing between your elements. You can up on the [box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model) or try out a [Codecademy course](https://www.codecademy.com/courses/learn-css-box-model/lessons/box-model-intro/exercises/box-model-intro?action=lesson_resume&course_redirect=learn-css) to get a better understanding on how and when to use each box model property.
 
-We've applied some padding, a maximum height and a few other small CSS tweaks to make sure our text content is well positioned within our card container. Feel free to play with this structure using your *DevTools* to tweak the card to your liking.
+We've applied some *padding*, a *maximum height* and a few other small CSS tweaks to make sure our text content is well positioned within our card container. Feel free to play with this structure using your dev tools to tweak the card to your liking.
 
 ````
 #card-container {
@@ -63,7 +63,7 @@ We've applied some padding, a maximum height and a few other small CSS tweaks to
 }
 ````
 
-I've included this lovely festive image of my dream family using the `\<img>` tag, but you can use any image you'd like. In the code below, I've removed any margin and set it to occupy 100% of it's container's width. In this case, the image is in the `two-thirds column`, which means the image will stretch to fit the whole two-thirds of the card. 
+I've included this lovely festive image of my dream family using the `<img>` tag, but you can use any image you'd like. In the code below, I've removed any margin and set it to occupy 100% of it's container's width. In this case, the image is in the `two-thirds column`, which means the image will stretch to fit the whole two-thirds of the card. 
 
 In order to prevent the image from stretching and distorting our beautiful family's faces, the property `object-fit: cover;` will ensure we preseve the original image's aspect ratio. Finally, we floated the image to the right of it's container to make sure there is no extra white space to the right of the image.
 
@@ -84,15 +84,15 @@ As someone who is admittedly artistically challenged, I like to stand on the sho
 
 Don't celebrate Christmas, or maybe you're tired of looking at the lights? Tack 'CSS animation' on the end of your Google search and you will likely be in luck, like some [Hanukkah candles](https://codepen.io/laviperchik/pen/vjwnI) or some [falling snow](https://codepen.io/NickyCDK/pen/AIonk). Keep in mind you'll likely need to tweak the CSS to fit in with your page structure and style.
 
-Let's add some snow over our card image! We'll need to add `\<div id="snow">\</div>` to our card file to hold our snow animation just under our image - the image column in our card container should now look like this.
+Let's add some snow over the card image! We'll need to add `<div id="snow"></div>` to our card file to hold the snow animation just under the image - the image column in the card container should now look like this.
 
 ````
 <div class="two-thirds column">
 	<img src="./img/our-family.jpg">
-	<div id="snow">\</div>
+	<div id="snow"></div>
 </div>
 ````
-Now we can add code for the snow CSS animation to our `card.css` file:
+Now we can add code for the snow CSS animation to the `card.css` file:
 
 ````
 #snow{
