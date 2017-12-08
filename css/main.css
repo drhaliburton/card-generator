@@ -2,8 +2,9 @@ body {
     margin: auto;
     padding: 4rem;
     width: 75%;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', serif;
     font-size: 16px;
+    background-color: #EFECE8;
 }
 
 #card-container {
@@ -26,6 +27,7 @@ input, textarea {
 input:focus, textarea:focus {
     border-color: darkgreen !important;
 }
+
 
 button:hover {
     background-color: darkred;

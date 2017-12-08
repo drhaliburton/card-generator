@@ -9,7 +9,7 @@ h2 {
   font-size: 2.5rem;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding-left: 1rem;
 }
 #card-container {
@@ -18,7 +18,7 @@ p {
 .text-container {
   padding: 4rem 1rem 2rem 1rem;
   max-height: 400px;
-  overflow: scroll;
+  overflow: auto;
 }
 #card-from {
   float: right;
