@@ -4,8 +4,7 @@ body {
     width: 75%;
     font-family: 'Lato', serif;
     font-size: 16px;
-    background-image: url("../img/creampaper.png");
-    background-color: #f6f6f6;
+    background-color: #EFECE8;
 }
 
 #card-container {
