@@ -13,19 +13,19 @@ var saveButton = document.getElementById('save-button');
 
 
 
-formTitle.addEventListener('change', function(event) {
+formTitle.addEventListener('keyup', function(event) {
   cardTitle.innerText = event.target.value;
 })
 
-formFrom.addEventListener('change', function(event) {
+formFrom.addEventListener('keyup', function(event) {
   cardFrom.innerText = event.target.value;
 })
 
-formMsg.addEventListener('change', function(event) {
+formMsg.addEventListener('keyup', function(event) {
   cardMsg.innerText = event.target.value;
 })
 
-formImage.addEventListener('change', function(event) {
+formImage.addEventListener('keyup', function(event) {
   cardImage.src = event.target.value;
 })
 
@@ -36,7 +36,8 @@ function downloadURI(uri, name) {
   link.click();
 }
 
-saveButton.addEventListener('click', function() {
+saveButton.addEventListener('click', function(event) {
+  event.preventDefault();
 
   html2canvas(cardContainer, {
     onrendered: function(canvas) {
