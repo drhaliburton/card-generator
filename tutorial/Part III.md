@@ -9,12 +9,14 @@ In order for someone to be able to fill out and save their own card, we'll need 
 	- Attach event listeners to specific elements
 	- React to user events
 
-Today, we'll only be working with the *Document Object* using *Front-End* or *Client Side* JavaScript. Client-side JavaScript runs in your user's Browser after the HTML has loaded, allowing you to respond to events and manipulate it's content. *Server Side* code runs before the page is loaded to setup and deliver the content from the server hosting the webpage. Later on in this project, we'll be using GitHub pages to handle the Server Side setup and to host our project to share with others. If you want to learn more about Back-End programming with JavaScript, explore Node.js with the folks from [NodeSchool](https://nodeschool.io/).
+## Client Side vs. Server Side
+
+Today, we'll only be working with the *Document Object* using *Client Side* (Front-End) JavaScript. Client-side JavaScript runs in your user's Browser after the HTML has loaded, allowing you to respond to events and manipulate it's content. *Server Side* (Back-End) code runs before the page is loaded to setup and deliver the content from the server hosting the webpage. Later on in this project, we'll be using GitHub pages to handle the Server Side setup and to host our project to share with others. If you want to learn more about Back-End programming with JavaScript, explore Node.js with the folks from [NodeSchool](https://nodeschool.io/).
 
 Learning the differences between *Front-End/Back-End* or *Client Side/Server Side* early on is useful to give you perspective on the bigger picture of building published a full-scale web app vs. a static page. The Odin Project covers this well, or [read up on the essentials](http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend).
 
 
-# DOM Selection & Manipulation
+## DOM Selection & Manipulation
 
 Okay so now we have a little context on why JavaScript is *wonderful*, let's make it useful. All of our JavaScript will be added in our `main.js` file, which has been linked in our `<script>` tag at the bottom of our `index.html` file.
 
@@ -42,7 +44,7 @@ Using our first selector as an example `document.getElementById('card-container'
 The big upside to using `getElementById` is that we have already tagged each of the form elements we knew we would need to manipulate. Seeing CSS Ids can only be used *once*, we can be fairly certain that our `document.getElementById('card-container')` selector will give us the right element. You'll need to know more about JavaScript loops and conditionals when you start selecting multiple elements and NodeLists, which you can learn about in [this chapter on the DOM](https://eloquentjavascript.net/13_dom.html) from Eloquent JavaScript.
 
 
-# Event listeners
+## Event listeners
 
 With all of our elements neatly stored in their variables, we can now attach our *Event Listeners* to trigger a response to a user's actions. Once an event takes place, we can then react by running a function, adding or removing DOM elements, manipulating content on the page or changing CSS properties to name a few. 
 
@@ -99,14 +101,3 @@ saveButton.addEventListener('click', function(event) {
 ````
 
 We'll cover the functionality for inside your click handler to save a card in the next tutorial.
-
-# HTML 2 Canvas
-
-
-
-
-# Deploying
-
-
-
-

@@ -25,7 +25,7 @@ formMsg.addEventListener('keyup', function(event) {
   cardMsg.innerText = event.target.value;
 })
 
-formImage.addEventListener('keyup', function(event) {
+formImage.addEventListener('change', function(event) {
   cardImage.src = event.target.value;
 })
 
