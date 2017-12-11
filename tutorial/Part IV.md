@@ -1,4 +1,6 @@
-# Part IV: HTML 2 Canvas
+# Part IV: JavaScript Libraries & Github Pages
+
+Deploying your project is thrilling - you get to share what you're building and maybe make life a little more pleasant for those using your page. That's one of the beautiful parts of the developer community; sharing and benefitting from eachother's hard work, which is what we're going to be covering in our last section. Specifically, sharing your page and using other people's pre-built functionality found in *libraries*. 
 
 HTML2Canvas is a neat little library we can use to turn our code into a image. Importing libraries like HTML2Canvas can help carry the weight for heavier tasks, like mapping our DOM structure and building a image representation of our card container. We're using this library in particular mostly because it's easy to import and use for a static like ours - it's not the only option, so feel free to search for alternatives.
 
