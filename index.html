@@ -21,18 +21,22 @@
 		<div class="row form-container">
 			<div class="one-half column">
 				<form>
-				<label for="title">Card Title:</label>
-				<input type="text" id="title" name="title">
-				<label for="from">From:</label>
-				<input type="text" id="from" name="from">
-				<label for="image">Background Image:</label>
-				<input type="text" id="image" name="image" placeholder="https://placekitten.com/g/600/400">
+					<label for="title">Card Title:</label>
+					<input type="text" id="title" name="title">
+					<label for="from">From:</label>
+					<input type="text" id="from" name="from">
+					<label for="image">Background Image:</label>
+					<select id="image">
+						<option value="./img/LHL-Christmas-Photo.jpg">Human Family</option>
+						<option value="./img/our-family.jpg">Dog Family</option>
+					</select>
+				</form>
 			</div>
 			<div class="one-half column">
 				<form>
-				<label for="msg">Message:</label>
-				<textarea id="msg" name="message"></textarea>
-				<button id="save-button">Save Card</button>
+					<label for="msg">Message:</label>
+					<textarea id="msg" name="message"></textarea>
+					<button id="save-button">Save Card</button>
 				</form>
 			</div>
 		</div>
@@ -48,9 +52,6 @@
 				<div id="snow"></div>
 			</div>
 		</div>
-	</div>
-	</div>
-
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 		<script src="js/main.js"></script>

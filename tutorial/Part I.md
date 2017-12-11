@@ -7,11 +7,11 @@ If you're considering taking a coding Bootcamp, having a good grasp of structure
 
 **What are we making?** Seeing 'tis the season, let's put together a simple Holiday card generator! This will give you the chance to explore page structure with HTML, styling and animations with CSS and functionality with JavaScript. 
 
-	- Project setup and Github
+	- Project setup and deploying Github
 	- Building a basic webpage with HTML
-	- CSS frameworks and grids
+	- CSS frameworks, grids and responsive design
 	- CSS styling and animations
-	- jQuery & the Document Object Model (DOM)
+	- The Document Object Model (DOM)
 	- html2canvas to save your code as a .jpg image
 
 You can see what I've made for [my card generator here](https://drhaliburton.github.io/card-generator/), but the most important part of this tutorial isn't to copy what I've created - this is your project, and you should explore the limits of CSS to make something incredibly unique that represents your aesthetic. Everything on the page can be customized with your own code, this is just a guideline.
@@ -60,8 +60,10 @@ One example of the default styling are with forms. In your `<body>`, add a basic
 	<input type="text" id="title" name="title">
 	<label for="from">From:</label>
 	<input type="text" id="from" name="from">
-	<label for="image">Background Image:</label>
-	<input type="text" id="image" name="image">
+	<select id="image">
+		<option value="./img/LHL-Christmas-Photo.jpg">Human Family</option>
+		<option value="./img/our-family.jpg">Dog Family</option>
+	</select>
 	<label for="msg">Message:</label>
 	<textarea id="msg" name="message"></textarea>
 	<button id="save-button">Save Card</button>
@@ -73,8 +75,8 @@ One example of the default styling are with forms. In your `<body>`, add a basic
 Here's where we can start to see the benefits of using a CSS framework - the default styles from our framework are applied on our new form giving them a much smoother feel than the browser defaults. 
 
 <center>
-<img src="https://i.imgur.com/YoKLMMi.png" style="width: 40%">
-<img src="https://i.imgur.com/mC4hY3z.png" style="width: 40%">
+<img src="https://i.imgur.com/aG32HYx.png" style="width: 40%">
+<img src="https://i.imgur.com/Db385XQ.png" style="width: 40%">
 </center>
 
 Another benefit of using a CSS framework is a pre-defined grid system. A grid system allows us to easily divide our page into `rows` and `columns` that will occupy a set width depending on which column size you choose. Visit the documentation for [Skeleton's grid system](http://getskeleton.com/#grid) for a detailed visual their columns and lets apply that to building our page and card's structure.
@@ -93,36 +95,39 @@ Now let's add our form code into our new columns:
 ````
 <div class="row form-container">
 	<div class="one-half column">
-	    <form>
-		<label for="title">Card Title:</label>
-		<input type="text" id="title" name="title">
-		<label for="from">From:</label>
-		<input type="text" id="from" name="from">
-		<label for="image">Background Image:</label>
-		<input type="text" id="image" name="image">
+		<form>
+			<label for="title">Card Title:</label>
+			<input type="text" id="title" name="title">
+			<label for="from">From:</label>
+			<input type="text" id="from" name="from">
+			<select id="image">
+				<option value="./img/LHL-Christmas-Photo.jpg">Human Family</option>
+				<option value="./img/our-family.jpg">Dog Family</option>
+			</select>
+		</form>
 	</div>
 	<div class="one-half column">
-	  <form>
-	    <label for="msg">Message:</label>
-	    <textarea id="msg" name="message"></textarea>
-	    <button id="save-button">Save Card</button>
-	  </form>
+		<form>
+			<label for="msg">Message:</label>
+			<textarea id="msg" name="message"></textarea>
+			<button id="save-button">Save Card</button>
+		</form>
 	</div>
 </div>
 ````
 
 Perfect! Our forms should now be split into two lovely columns, leaving us more space to build our card container. You can take some creative liberty for your card layout and build whatever structure you'd like, but I'm going to make two-column card like the one below.
 
-![img](https://i.imgur.com/ctYPFR9.jpg)
+![img](https://i.imgur.com/R8DN2S2.jpg)
 
 I set up my card container with a `one-third column` to hold the text content and a `two-thirds column` to hold the image. 
 
 ````
 <div id="card-container" class="row">
    <div class="one-third column text-container">
-       <h1 id="card-title">Happy Holidays!\</h1>
-       <p id="card-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et efficitur nulla, non convallis purus. Proin faucibus tellus nulla, a convallis nisi tincidunt quis. Nulla lacus felis, iaculis vel magna eu, faucibus porta est.\</p>
-       <h2 id="card-from">Love Aunt Debbie\</h2>
+       <h1 id="card-title">Happy Holidays!</h1>
+       <p id="card-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et efficitur nulla, non convallis purus. Proin faucibus tellus nulla, a convallis nisi tincidunt quis. Nulla lacus felis, iaculis vel magna eu, faucibus porta est.</p>
+       <h2 id="card-from">Love Aunt Debbie</h2>
     </div>
     <div class="two-thirds column">
       <img src="./img/our-family.jpg">
@@ -131,7 +136,7 @@ I set up my card container with a `one-third column` to hold the text content an
 </div>
 ````
 
-![our basic card generator](https://i.imgur.com/8FD6e63.jpg)
+![our basic card generator](https://i.imgur.com/ray2gWl.jpg)
 
 Looking sharp 😎. We've split our form and card containers into organized columns, and we have the start to a wonderful webpage. The boilerplate project that we're working out of includes some basic CSS styling for this card layout, but we'll be tackling customization with CSS shortly so don't worry if this doesn't quite fit your vision.
 

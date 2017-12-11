@@ -1,4 +1,4 @@
-# JavaScript and the Document Object Model
+# Part III: JavaScript and the Document Object Model
 
 Now that we've created something beautiful, we're going to explore how to bring your page to life. JavaScript allows you to dictate how your page will interact with it's users when they interact with your page. We'll walk through how to add some basic functionality but JavaScript opens a whole other dimension of interaction that is really only limited by your understanding of the language. I really loved the Odin Project's [Web Develpment 101](https://www.theodinproject.com/courses/web-development-101) course for hands-on practice and Wes Bos has been an invaluable resource for both JS wizardry and terrible jokes - try out his [JavaScript 30](https://javascript30.com/) challenge.
 
@@ -48,7 +48,7 @@ The big upside to using `getElementById` is that we have already tagged each of 
 
 With all of our elements neatly stored in their variables, we can now attach our *Event Listeners* to trigger a response to a user's actions. Once an event takes place, we can then react by running a function, adding or removing DOM elements, manipulating content on the page or changing CSS properties to name a few. 
 
-Read up on events and how we can react to them in [this chapter on Handling Events](https://eloquentjavascript.net/14_event.html) from Eloquent JavaScript and check out [this list](https://developer.mozilla.org/ru/docs/Web/Events) of all the events that you can listen for.
+Read up on events and how we can react to them in [this chapter on handling events](https://eloquentjavascript.net/14_event.html) from Eloquent JavaScript and check out [this list](https://developer.mozilla.org/ru/docs/Web/Events) of all the events that you can listen for.
 
 To start, we're going to be listening to changes to the contents of our form fields, and then updating the corresponding text value on our card. You can [see it in action here](https://drhaliburton.github.io/card-generator/). 
 
@@ -82,10 +82,10 @@ formMsg.addEventListener('keyup', function(event) {
 
 ````
 
-Next up, we can allow users to add their own card image using the `src` property. We'll add our `keyup` event listener the same as before, but this time we'll replace the `cardImage`'s `src` attribute with our `formImage` input field's value. It's worth noting to your users that the image needs to be a valid link to an image file and they can host their own through a site like [imgur](https://imgur.com/).
+Next up, we can allow users their select from your list of images. We'll add a `change` event listener which will fire when a selection is changed, and update `cardImage`'s `src` attribute with our `formImage` select field's value.
 
 ````
-formImage.addEventListener('keyup', function(event) {
+formImage.addEventListener('change', function(event) {
   cardImage.src = event.target.value;
 })
 ````

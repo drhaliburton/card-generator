@@ -38,7 +38,6 @@ function downloadURI(uri, name) {
 
 saveButton.addEventListener('click', function(event) {
   event.preventDefault();
-
   html2canvas(cardContainer, {
     onrendered: function(canvas) {
       var myImage = canvas.toDataURL("image/png");

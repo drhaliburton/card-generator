@@ -1,15 +1,15 @@
-# Styling, Animations & Reponsive Design With CSS
+# Part II: Styling, Animations & Reponsive Design With CSS
 
 Welcome back! Now that we have our lovely card generator structured, it's time for some fun with CSS. CSS is wildly powerful and doesn't get enough credit for the hard work it does for your webpage. You can do so much with CSS, like:
 
 	- Spacing and positioning your elements
 	- Changing your font styles and colors
 	- Adding borders and background images
-	- Creating hover effects
+	- Creating hover effects 
 	- Animations and transitions
 	- Responsive design to add custom styling for different screen sizes
 
-I can't help you too much with this step of the project - it's up to you to research the different CSS properties to achieve card design you have in mind. It's your personal brand and style that will make your card unique. I start by sketching out a rough idea of what I want end product to look like, choose my colour scheme and make sure I'm happy with my layout before getting started.
+I can't help you too much with this step of the project - it's up to you to research the different CSS properties to achieve card design you have in mind. It's your personal brand and style that will make your card unique. I start by sketching out a rough idea of what I want end product to look like, choose my colour scheme and make sure I'm happy with my layout before getting started. 
 
 Before you start styling, I recommend getting familiar with *Developer Tools*, a *very* useful way to play with your CSS style and HTML page structure that is included in most browsers. You can open developer tools with `right click -> inspect`. Dev tools allows you to interact and change the HTML & CSS on *any* webpage and learning how to leverage the power of dev tools for exploring and playing with your code **will** drastically improve your life. Learn more about the different features and how to use DevTools in [this tutorial](http://blog.galvanize.com/how-to-use-chrome-devtools-for-the-absolute-beginner/) or [this video](https://www.youtube.com/watch?v=wcFnnxfA70g).
 
@@ -17,9 +17,9 @@ Before you start styling, I recommend getting familiar with *Developer Tools*, a
 
 Here's my beautiful, yet simple card. Let's explore some of the basic CSS styles I've used.
 
-![img](https://i.imgur.com/ctYPFR9.jpg)
+![img](https://i.imgur.com/R8DN2S2.jpg)
 
-First up, take a look at the text container and you'll notice that lovely cursive font. Over in our `index.html` file we've included a link tag:
+First up, take a look at the text container and you'll notice that lovely cursive font. Over in our `index.html` file we've included a link tag: 
 
 `<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto+Slab" rel="stylesheet">`
 
@@ -63,7 +63,7 @@ We've applied some *padding*, a *maximum height* and a few other small CSS tweak
 }
 ````
 
-I've included this lovely festive image using the `<img>` tag, but you can use any image you'd like. In the code below, I've removed any margin and set it to occupy 100% of it's container's width. In this case, the image is in the `two-thirds column`, which means the image will stretch to fit the whole two-thirds of the card.
+I've included this lovely festive image of my dream family using the `<img>` tag, but you can use any image you'd like. In the code below, I've removed any margin and set it to occupy 100% of it's container's width. In this case, the image is in the `two-thirds column`, which means the image will stretch to fit the whole two-thirds of the card. 
 
 In order to prevent the image from stretching and distorting our beautiful family's faces, the property `object-fit: cover;` will ensure we preseve the original image's aspect ratio. Finally, we floated the image to the right of it's container to make sure there is no extra white space to the right of the image.
 
@@ -141,12 +141,12 @@ Pseudo classes allow you to add conditional styles depending on different action
 
 Our CSS framework comes with some default styles that are decidedly un-festive, like the blue outline when we *focus* our form input fields and our bland white and grey 'save' button. Let's fix that!
 
-We're going to start by targeting the `<input>` and `<textarea>` fields and updating their border color when they are in *focus* - focus means when the input element as been selected and a user is able to type. We can use the `:focus` pseudo class to change our border-color, using the !important flag to make sure our styles will override the default input:focus styling imported from our framework.
+We're going to start by targeting the `<input>`, `<select>` and `<textarea>` fields and updating their border color when they are in *focus* - meaning when the input element as been selected and a user is able to type. We can use the `:focus` pseudo class to change our border-color, using the !important flag to make sure our styles will override the default input:focus styling imported from our CSS framework. 
 
-Add the following to your `main.css` file to update the `<input>` and `<textarea>` field border on foc`us.
+Add the following to your `main.css` file to update the `<input>`, `<select>` and `<textarea>` field border on focus.
 
 ````
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
     border-color: darkgreen !important;
 }
 ````
@@ -167,7 +167,7 @@ One of the most beautiful parts of using a grid system to structure our page is 
 
 Using *media queries*, you're able to customize different CSS rules to apply depending on the width of your screen. This is incredibly important in our modern-era of devices that come in all shapes and sizes. This allows us to redestribute our page elements and add custom sizing for mobile or tablet devices in addition to standard desktop screens.
 
-Now if you shrink your screen, the card message disapears outside of the card frame. Let's add a media query to adjust our styling around where our card starts to break so we always have enough real-estate for our message. Here's what a media query would look like to change our *column width* and *image height* on screens that are *smaller* than 750px wide.
+Now if you shrink your screen, the card message disapears outside of the card frame. Let's add a media query to adjust our styling around where our card starts to break so we always have enough real-estate for our message. Here's what a media query would look like to change our *column width* and *image height* on screens that are *smaller* than 750px wide. 
 
 You can add this at the bottom of your `card.css` file.
 
