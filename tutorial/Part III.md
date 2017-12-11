@@ -22,7 +22,7 @@ Okay so now we have a little context on why JavaScript is *wonderful*, let's mak
 
 We're going to start by grabbing the different elements and manipulating the *Document Object Model*, most fondly known as *the DOM*. Honestly, the DOM is just your markup - the HTML and CSS you wrote in Part I & II. Open up your DevTools and there she is. Read up on the basics of the DOM [here](https://css-tricks.com/dom/) and then [this short article](https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation) from the Odin Project covering the essentials of DOM manipulation. This one is manditory 🚧.
 
-So let's take a look at our form and start grabbing the different elements we're going to need. Add this to the top of your `main.js` file.
+Let's take a look at our form and start grabbing the different elements we're going to need. Add this to the top of your `main.js` file.
 
 ````
 var cardContainer = document.getElementById('card-container');
@@ -39,7 +39,7 @@ var formImage = document.getElementById('image');
 var saveButton = document.getElementById('save-button');
 ````
 
-Using our first selector as an example `document.getElementById('card-container')`, we're searching through our DOM for the element that has been tagged with the CSS Id `#card-container`, and then storing a reference to that DOM element in a *variable*. Variables are like shorthand references to help keep our code cleaner and easier to read. You can create new variables using the `var` delcaration, a variable name of your choice `var cardContainer`, and then assigning it a value `var cardContainer = document.getElementById('card-container')`.
+The line `document.getElementById('card-container')` searches through our DOM for the element that has been tagged with the CSS Id `#card-container` and then stores a reference to that DOM element in a *variable*. Variables are like shorthand references to help keep our code cleaner and easier to read. You can create new variables using the `var` delcaration, a variable name of your choice `var cardContainer`, and then assigning it a value `var cardContainer = document.getElementById('card-container');` - don't forget your semicolon at the end.
 
 The big upside to using `getElementById` is that we have already tagged each of the form elements we knew we would need to manipulate. Seeing CSS Ids can only be used *once*, we can be fairly certain that our `document.getElementById('card-container')` selector will give us the right element. You'll need to know more about JavaScript loops and conditionals when you start selecting multiple elements and NodeLists, which you can learn about in [this chapter on the DOM](https://eloquentjavascript.net/13_dom.html) from Eloquent JavaScript.
 
