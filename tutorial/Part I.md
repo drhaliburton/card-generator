@@ -108,6 +108,7 @@ Now let's add our form code into our new columns:
 			<input type="text" id="title" name="title">
 			<label for="from">From:</label>
 			<input type="text" id="from" name="from">
+			<label for="image">Background Image:</label>
 			<select id="image">
 				<option value="./img/LHL-Christmas-Photo.jpg">Human Family</option>
 				<option value="./img/our-family.jpg">Dog Family</option>
@@ -134,15 +135,14 @@ I set up my card container with a `one-third column` to hold the text content an
 
 ````
 <div id="card-container" class="row">
-   <div class="one-third column text-container">
-       <h1 id="card-title">Happy Holidays!</h1>
-       <p id="card-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et efficitur nulla, non convallis purus. Proin faucibus tellus nulla, a convallis nisi tincidunt quis. Nulla lacus felis, iaculis vel magna eu, faucibus porta est.</p>
-       <h2 id="card-from">Love Aunt Debbie</h2>
-    </div>
-    <div class="two-thirds column">
-      <img src="./img/our-family.jpg">
-    </div>
-  </div>
+	<div class="one-third column text-container">
+		<h2 id="card-title">Happy Holidays!</h2>
+		<p id="card-msg">Lorum Ipsum and a Happy New Year! We would like to thank our entire community for their support this year. We enjoyed all the challenged and achievements 2017 brought our way and we’re looking forward to what 2018 will bring.<br><br>May your holidays be filled with code and cocoa!</p>
+		<h3 id="card-from">Love Lighthouse Labs</h3>
+	</div>
+	<div class="two-thirds column">
+		<img src="./img/LHL-Christmas-Photo.jpg" id="card-image">
+	</div>
 </div>
 ````
 

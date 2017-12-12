@@ -17,7 +17,7 @@ Before you start styling, I recommend getting familiar with *Developer Tools*, a
 
 Here's my beautiful, yet simple card. Let's explore some of the basic CSS styles I've used.
 
-![img](https://i.imgur.com/R8DN2S2.jpg)
+![img](https://i.imgur.com/jfoGYDi.jpg)
 
 First up, take a look at the text container and you'll notice that lovely cursive font. Over in our `index.html` file we've included a link tag:
 
