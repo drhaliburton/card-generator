@@ -39,12 +39,12 @@ And there you have it. Our basic card generator is done, and you have a playgrou
 
 In order to get your card generator live, you're going to need your [Github account](https://github.com/). If you haven't yet, it's a great time to go through the [Hello World](https://guides.github.com/activities/hello-world/) tutorial and fire up your own repo. If you already have an account, hit the '+' button in the top right hand corner and follow the steps. You'll need to make sure it's `public` and make sure what you name your repository well - the name of your repo will be part of the `url` you share!
 
-Now is a great time to tackle the you're going to want to tackle the git stretch goal. Learn some of the basics of using the *command line* in order to complete [Github's pages setup tutorial](https://pages.github.com) 
+Now is a great time to tackle the you're going to want to tackle the git stretch goal. You'll also need to learn some simple file navigation with the *command line* - walk through [this Codecademy tutorial](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command?action=lesson_resume) to get familiar with the basic commands.
 
 Git is used for something called *Version Control* which allows developers to easily keep track of project versions, see changes between old and new code files, segment projects into branches and so much more. To get started, you'll need to download Git and get familiar with the basic commands. You can get Git [direct from the source here](https://git-scm.com/downloads) or take a look through [Git - the simple guide](
 http://rogerdudler.github.io/git-guide/). If you want to dive a even deeper, make your way through [Git-it](http://jlord.us/git-it/challenges/get_git.html), a simple tutorial that walks you through how to leverage the benefits of using Git or check out the Odin Project's [chapter on git](https://www.theodinproject.com/courses/web-development-101/lessons/introduction-to-git).
 
-Once you are comfortable with the command line, let's commit and push your project into your new repo.  Follow [these instructions](https://help.github.com/articles/adding-a-remote/) to set up a remote to your repository from within your project folder.
+Once you are comfortable with the command line and git, let's commit and push your project into your new repo.  Follow [these instructions](https://help.github.com/articles/adding-a-remote/) to set up a remote to your repository from within your project folder.
 
 ````
 git add *

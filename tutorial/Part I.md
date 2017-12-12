@@ -1,11 +1,11 @@
 
 # Coding Practice: Building A Holiday Card Generator
 
-Hello, welcome! It was around this time last year when I started prepping for the Web Development Bootcamp at Lighthouse, and I really enjoyed tinkering with small projects over learning syntaxes and walking through tutorials. It was nice to have some down time over the Holidays to focus on playing with the basics which helped build my excitement for starting the program. I put together this little tutorial that will hopefully give you the opportunity to tinker, with lots of resources to explore web development and design a little furthur. 
+Hello, welcome! It was around this time last year when I started prepping for the Web Development Bootcamp at Lighthouse, and I really enjoyed tinkering with small projects over learning syntaxes and walking through tutorials. It was nice to have some down time over the Holidays to focus on playing with the basics which helped build my excitement for starting the program. I put together this little tutorial that will hopefully give you the opportunity to tinker, with lots of resources to explore web development and design a little furthur.
 
 If you're considering taking a coding Bootcamp, having a good grasp of structure, styling, event handlers and DOM manipulation can be endlessly useful, and isn't always covered in a prep course. It's worth practicing and fiddling with your CSS to get a feel for the sometimes frustrating complexities of building even a simple webpage.
 
-**What are we making?** Seeing 'tis the season, let's put together a simple Holiday card generator! This will give you the chance to explore page structure with HTML, styling and animations with CSS and functionality with JavaScript. 
+**What are we making?** Seeing 'tis the season, let's put together a simple Holiday card generator! This will give you the chance to explore page structure with HTML, styling and animations with CSS and functionality with JavaScript.
 
 	- Project setup and deploying Github
 	- Building a basic webpage with HTML
@@ -26,7 +26,7 @@ Most developers out there use a service like [Github](https://github.com/) to st
 
 **Register for a Github account**. We'll be using [Github Pages](https://pages.github.com/) to host our card generator later on in the project and it's useful to get familiar with Github's interface. To get started on our Holiday Card Generator, you'll need to download the boilerplate I've shared through my [Github repository](https://github.com/drhaliburton/card-generator-boilerplate).
 
-1. Grab the starter files [found here](https://github.com/drhaliburton/card-generator-boilerplate). Click the big green 'Clone or download' button and hit Download Zip, or clone using Git if you decide to take on the <a href='#stretch-goal'>stretch goal below</a>. 
+1. Grab the **starter files [found here](https://github.com/drhaliburton/card-generator-boilerplate)**. Click the big green 'Clone or download' button and hit Download Zip, or clone using Git if you decide to take on the <a href='#stretch-goal'>stretch goal below</a>.
 
 2. Unzip the folder and open the project with your preferred code editor.
 
@@ -35,11 +35,11 @@ Most developers out there use a service like [Github](https://github.com/) to st
 
 ## Building Your Page Structure
 
-I like to think that a webpage is like an apartment - HTML is your walls & furniture, CSS is your paint colours, animations are those smooth no-slam drawers, and JavaScript is the electricity that powers the joint. But before we can move in and start decorating, let's build our walls and set up the furniture. 
+I like to think that a webpage is like an apartment - HTML is your walls & furniture, CSS is your paint colours, animations are those smooth no-slam drawers, and JavaScript is the electricity that powers the joint. But before we can move in and start decorating, let's build our walls and set up the furniture.
 
 When you open up your `index.html` file, you'll see some basic tags.
 
-- `<title>` & `<meta>` tags which will help search engines like Google show your page to the right people. 
+- `<title>` & `<meta>` tags which will help search engines like Google show your page to the right people.
 
 - `<link>` tags to import your CSS files
 
@@ -72,11 +72,19 @@ One example of the default styling are with forms. In your `<body>`, add a basic
 
 *Make sure you refresh the `index.html` page in your browser to see your changes.*
 
-Here's where we can start to see the benefits of using a CSS framework - the default styles from our framework are applied on our new form giving them a much smoother feel than the browser defaults. 
+Here's where we can start to see the benefits of using a CSS framework - the default styles from our framework are applied on our new form giving them a much smoother feel than the browser defaults.
 
 <center>
-<img src="https://i.imgur.com/aG32HYx.png" style="width: 40%">
-<img src="https://i.imgur.com/Db385XQ.png" style="width: 40%">
+<figure>
+<img src="https://i.imgur.com/aG32HYx.png" style="width: 100%">
+<figcaption>Browser default form styling.</figcaption>
+<br>
+<img src="https://i.imgur.com/Db385XQ.png" style="width: 100%">
+
+<figcaption>Skeleton.css default form styling</figcaption>
+</figure>
+
+
 </center>
 
 Another benefit of using a CSS framework is a pre-defined grid system. A grid system allows us to easily divide our page into `rows` and `columns` that will occupy a set width depending on which column size you choose. Visit the documentation for [Skeleton's grid system](http://getskeleton.com/#grid) for a detailed visual their columns and lets apply that to building our page and card's structure.
@@ -116,11 +124,13 @@ Now let's add our form code into our new columns:
 </div>
 ````
 
-Perfect! Our forms should now be split into two lovely columns, leaving us more space to build our card container. You can take some creative liberty for your card layout and build whatever structure you'd like, but I'm going to make two-column card like the one below.
+Perfect! Our forms should now be split into two lovely columns, leaving us more space to build our card container. You can take some creative liberty for your card layout and build whatever structure you'd like, but I'm going to make two-column card.
 
-![img](https://i.imgur.com/R8DN2S2.jpg)
+My card will eventually look like this:
 
-I set up my card container with a `one-third column` to hold the text content and a `two-thirds column` to hold the image. 
+![img](https://i.imgur.com/jfoGYDi.jpg)
+
+I set up my card container with a `one-third column` to hold the text content and a `two-thirds column` to hold the image.
 
 ````
 <div id="card-container" class="row">
@@ -136,7 +146,13 @@ I set up my card container with a `one-third column` to hold the text content an
 </div>
 ````
 
-![our basic card generator](https://i.imgur.com/ray2gWl.jpg)
+<center>
+	<figure>
+		<img src="https://i.imgur.com/ray2gWl.jpg">
+		<figcaption>A basic two-column card container.</figcaption>
+	</figure>
+</center>
+
 
 Looking sharp 😎. We've split our form and card containers into organized columns, and we have the start to a wonderful webpage. The boilerplate project that we're working out of includes some basic CSS styling for this card layout, but we'll be tackling customization with CSS shortly so don't worry if this doesn't quite fit your vision.
 
@@ -146,7 +162,7 @@ If you want to dive deeper into the world of structuring your HTML layout using 
 
 #### <span id="stretch-goal">Stretch Goal: Using Git to Manage Your Project
 
-While it's in no way necessary for this project, learning the basics of Git early on will help you build your skills using the best practices of professional developers. Try learning enough about Git to manage your project on Github using Git from the Command Line (😅)! 
+While it's in no way necessary for this project, learning the basics of Git early on will help you build your skills using the best practices of professional developers. Try learning enough about Git to manage your project on Github using Git from the Command Line (😅)!
 
 Git is used for something called *Version Control* which allows developers to easily keep track of project versions, see changes between old and new code files, segment projects into branches and so much more. Git is most often used as a *Command Line Tool*, which at first can seem intimdating but very quickly makes you feel VERY COOL. Like hackerman cool. `
 

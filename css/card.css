@@ -1,15 +1,17 @@
-h1, h2 {
+h2, h3 {
   color: darkred;
-  font-family: 'Dancing Script', cursive;
-}
-h1 {
-  font-size: 3.5rem;
+  font-family: 'Petit Formal Script', cursive;
 }
 h2 {
+  text-align: center;
   font-size: 2.5rem;
 }
+h3 {
+  font-size: 1.6rem;
+
+}
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-left: 1rem;
 }
 #card-container {
@@ -18,7 +20,7 @@ p {
 .text-container {
   padding: 4rem 1rem 2rem 1rem;
   max-height: 400px;
-  overflow: auto;
+  overflow: hidden;
   word-wrap: break-word;
 }
 #card-from {
@@ -70,7 +72,10 @@ img {
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
+  #card-container {
+    max-height: auto;
+  }
   .one-third.column, .two-thirds.column {
     width: 100%;
     float: none;
@@ -82,6 +87,12 @@ img {
     height: auto;
   }
   #snow {
-    height: 280px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #snow {
+    height: 155px;
   }
 }
